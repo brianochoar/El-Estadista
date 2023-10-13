@@ -1,0 +1,591 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  flex-wrap: wrap; }
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+header nav {
+  background-color: #8a0f0f; }
+
+.nav-link {
+  color: white;
+  font-size: 25px;
+  font-family: Verdana;
+  font-style: italic; }
+
+.logo {
+  width: 120px;
+  height: 120px; }
+
+.hero {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 30px; }
+  .hero section div img {
+    width: 100%;
+    height: 500px;
+    position: relative; }
+  .hero section div h2 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: Verdana;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 40px;
+    margin: 10px;
+    position: absolute; }
+
+.herocentral2 {
+  position: relative;
+  bottom: auto; }
+  .herocentral2 h2 {
+    background-color: #8a0f0f;
+    color: white; }
+
+/*------------- NOTICIAS VERTICALES-----------*/
+.notivert {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .notivert .noticiavert div {
+    border: 2px solid black;
+    margin-top: 35px;
+    width: 100%;
+    height: 100%;
+    background-color: #e6e3e3; }
+    .notivert .noticiavert div img {
+      width: 100%;
+      height: 200px; }
+    .notivert .noticiavert div h2 {
+      text-align: center; }
+    .notivert .noticiavert div a {
+      width: 100%;
+      text-align: justify;
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: italic;
+      text-decoration: none;
+      font-size: 19px; }
+
+/*-----noticia verticales  GRID------*/
+.contenedor {
+  width: 80%;
+  padding: 25px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-areas: "principal principal columna1" "principal principal columna2" "principal principal columna3"; }
+  .contenedor .grid-items {
+    position: relative; }
+    .contenedor .grid-items a img {
+      object-fit: cover;
+      box-shadow: 14px 10px 39px -8px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 14px 10px 39px -8px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 14px 10px 39px -8px rgba(0, 0, 0, 0.75); }
+    .contenedor .grid-items img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%; }
+    .contenedor .grid-items h2 a {
+      font-size: 20px;
+      font-style: italic;
+      text-decoration: none;
+      color: white;
+      position: absolute;
+      bottom: 0;
+      background-color: black;
+      width: 100%;
+      padding: 5px;
+      text-align: center; }
+  .contenedor .segundoitem {
+    grid-area: columna1;
+    margin: 15px; }
+  .contenedor .terceritem {
+    grid-area: principal;
+    margin: 15px; }
+  .contenedor .cuartoitem {
+    grid-area: columna2;
+    margin: 15px; }
+  .contenedor .quintoitem {
+    grid-area: columna3;
+    margin: 15px; }
+
+/*---------- noticia carrusel------*/
+.carrusel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px; }
+  .carrusel h2 {
+    font-size: 50px;
+    font-style: italic;
+    background-color: #8a0f0f;
+    border: solid 2px black;
+    color: white; }
+
+/*----- pages ------*/
+.paginas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .paginas h2 {
+    color: #8a0f0f;
+    font-family: Verdana;
+    text-decoration: none;
+    font-size: 40px;
+    text-align: justify;
+    text-align: center;
+    margin: 10px;
+    padding: 10px; }
+  .paginas img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain; }
+  .paginas h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-align: justify;
+    margin: 10px; }
+  .paginas p {
+    color: black;
+    text-align: center;
+    font-size: 20px; }
+  .paginas iframe {
+    margin-top: 10px; }
+
+.deportefavorito {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.registro {
+  margin: 10px; }
+  .registro section .registro1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px; }
+
+.deporte {
+  color: red;
+  font-size: 20px; }
+
+.biografia {
+  display: grid;
+  justify-content: center; }
+  .biografia h3 {
+    font-size: 35px;
+    font-family: cursive;
+    font-style: oblique;
+    text-align: center;
+    background-color: rgba(169, 169, 169, 0.295);
+    color: black; }
+  .biografia .bio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    object-fit: contain;
+    width: 40%;
+    height: auto;
+    gap: 10px;
+    align-content: center;
+    margin-bottom: 30px;
+    transition: 3s;
+    grid-template-areas: "lionel cristiano mbappe" "maradona zidane ronaldo"; }
+    .biografia .bio .grid-items img {
+      margin: 20px;
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      background-color: rgba(119, 99, 99, 0.493);
+      box-shadow: 14px 10px 39px -8px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 14px 10px 39px -8px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 14px 10px 39px -8px rgba(0, 0, 0, 0.75); }
+    .biografia .bio .grid-items a {
+      width: 250px;
+      text-align: right;
+      color: red;
+      font-size: 20px;
+      background-color: transparent;
+      color: black;
+      text-decoration: none; }
+    .biografia .bio .grid-items h2 {
+      font-size: 20px;
+      font-family: cursive;
+      font-style: oblique;
+      text-align: center;
+      background-color: rgba(182, 19, 19, 0.295);
+      color: #c40808; }
+    .biografia .bio .item1 {
+      grid-area: lionel; }
+    .biografia .bio .item2 {
+      grid-area: cristiano; }
+    .biografia .bio .item3 {
+      grid-area: mbappe; }
+    .biografia .bio .item4 {
+      grid-area: maradona; }
+    .biografia .bio .item5 {
+      grid-area: zidane; }
+    .biografia .bio .item6 {
+      grid-area: ronaldo; }
+
+footer {
+  background-color: #8a0f0f;
+  bottom: 0; }
+  footer .colaboradores1 {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center; }
+  footer .colaboradores {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    footer .colaboradores a {
+      color: white;
+      text-decoration: none; }
+    footer .colaboradores h3 {
+      text-align: center;
+      margin-left: 10px;
+      font-size: 30px; }
+
+@media screen and (max-width: 1200px) {
+  .paginas h2 {
+    color: black;
+    font-family: Verdana;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center; }
+  .paginas img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain; }
+  .paginas p {
+    color: black;
+    text-align: center;
+    font-size: 20px; }
+  .paginas h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-align: justify; } }
+
+@media screen and (max-width: 1056px) {
+  .hero {
+    margin: 10px;
+    justify-content: space-around; }
+  .herocentral div a img {
+    width: 100%;
+    height: 450px;
+    position: relative; }
+  .herocentral div a h2 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: Verdana;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 10px;
+    position: absolute; } }
+
+@media screen and (max-width: 950px) {
+  .publicidad a img {
+    display: none; }
+  .herocentral2 a img {
+    width: 100%; }
+  .hero {
+    margin: 10px;
+    width: 100%; } }
+
+@media screen and (max-width: 985px) {
+  .notivert {
+    width: 50%;
+    height: 900px;
+    display: inline-block;
+    align-items: center; }
+  .noticiavert div {
+    border: 3px solid black;
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    background-color: #e6e3e3;
+    position: relative;
+    left: 200px; }
+  .noticiavert div img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; }
+  .noticiavert div h2 a {
+    font-size: 25px; } }
+
+@media screen and (max-width: 950px) {
+  .publicidad a img {
+    display: none; }
+  .herocentral2 a img {
+    width: 100%; }
+  .hero {
+    margin: 10px;
+    width: 100%; } }
+
+@media screen and (max-width: 850px) {
+  .contenedor {
+    width: 80%;
+    padding: 25px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: "principal columna1" "columna2  columna3"; }
+  .grid-items {
+    position: relative; }
+  .grid-items img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
+  .grid-items a img {
+    object-fit: cover;
+    box-shadow: 14px 10px 39px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 14px 10px 39px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 10px 39px -8px rgba(0, 0, 0, 0.75); }
+  .grid-items h2 a {
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    padding: 5px;
+    text-align: center; }
+  .segundoitem {
+    grid-area: columna1;
+    margin: 15px; }
+  .terceritem {
+    grid-area: principal;
+    margin: 15px; }
+  .cuartoitem {
+    grid-area: columna2;
+    margin: 15px; }
+  .quintoitem {
+    grid-area: columna3;
+    margin: 15px; } }
+
+@media screen and (max-width: 800px) {
+  .paginas h2 {
+    color: black;
+    font-family: Verdana;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: justify;
+    text-align: center;
+    width: 100%; }
+  .paginas img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain; }
+  .paginas p {
+    color: black;
+    text-align: center;
+    font-size: 20px; }
+  .paginas h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-align: justify; } }
+
+@media screen and (max-width: 800px) {
+  .colaboradores a h3 {
+    font-size: 20px; } }
+
+@media screen and (max-width: 770px) {
+  .noticiavert div h2 a {
+    font-size: 20px; } }
+
+@media screen and (max-width: 760px) {
+  .herocentral div a img {
+    width: 90%;
+    position: relative;
+    left: 30px; }
+  .herocentral div a h2 {
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-family: Verdana;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 10px;
+    position: relative;
+    left: 50px;
+    text-decoration: none;
+    padding: 20px; } }
+
+@media screen and (max-width: 680px) {
+  .paginas h2 {
+    color: black;
+    font-family: Verdana;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: justify;
+    text-align: center;
+    width: 100%;
+    margin: 0; }
+  .paginas img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin: 5px; }
+  .paginas p {
+    color: black;
+    text-align: center;
+    font-size: 20px; }
+  .paginas h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-align: justify; } }
+
+@media screen and (max-width: 661px) {
+  .hero {
+    margin: 0 auto; }
+  .herocentral div a img {
+    width: 100%;
+    position: relative;
+    left: 30px; }
+  .herocentral div a h2 {
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-family: Verdana;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 10px;
+    position: relative;
+    left: 50px;
+    text-decoration: none;
+    padding: 20px; } }
+
+@media screen and (max-width: 650px) {
+  .contenedor {
+    width: 80%;
+    padding: 25px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-areas: "principal" "columna1" "columna2" "columna3"; }
+  .grid-items {
+    position: relative;
+    left: 50px; }
+  .grid-items img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%; }
+  .grid-items a img {
+    object-fit: cover;
+    box-shadow: 14px 10px 39px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 14px 10px 39px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 10px 39px -8px rgba(0, 0, 0, 0.75); }
+  .grid-items h2 a {
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    padding: 5px;
+    text-align: center; }
+  .segundoitem {
+    grid-area: columna1;
+    margin: 15px; }
+  .terceritem {
+    grid-area: principal;
+    margin: 15px; }
+  .cuartoitem {
+    grid-area: columna2;
+    margin: 15px; }
+  .quintoitem {
+    grid-area: columna3;
+    margin: 15px; } }
+
+@media screen and (max-width: 650px) {
+  .carrusel h2 {
+    font-size: 30px; } }
+
+@media screen and (max-width: 630px) {
+  .notivert {
+    width: 60%;
+    height: 300px; }
+  .noticiavert div {
+    border: 2px solid black;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: #e6e3e3;
+    position: relative;
+    left: 150px; }
+  .noticiavert div img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; }
+  .noticiavert div h2 a {
+    font-size: 15px; } }
+
+@media screen and (max-width: 590px) {
+  .colaboradores a h3 {
+    font-size: 18px; }
+  .colaboradores1 {
+    width: 100%; }
+  .redes {
+    display: none; } }
+
+@media screen and (max-width: 500px) {
+  .herocentral div a img {
+    width: 100%;
+    position: relative;
+    left: 30px; }
+  .herocentral div a h2 {
+    width: 90%;
+    text-align: center;
+    color: white;
+    font-family: Verdana;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 10px;
+    position: relative;
+    left: 50px;
+    text-decoration: none;
+    padding: 5px; } }
+
+@media screen and (max-width: 500px) {
+  .noticiavert div {
+    position: relative;
+    left: 100px; } }
+
+@media screen and (max-width: 400px) {
+  .carrusel h2 {
+    font-size: 20px; } }
+
+@media screen and (max-width: 850px) {
+  .biografia {
+    width: 100%; }
+    .biografia .bio {
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "lionel cristiano" "mbappe maradona" "zidane ronaldo"; }
+      .biografia .bio .grid-items h2 {
+        display: none; }
+        .biografia .bio .grid-items h2 a {
+          background-color: red;
+          display: none; } }

@@ -1,0 +1,25 @@
+footer{
+    background-color: nth($colores,1);
+    bottom: 0;
+    .colaboradores1{
+        color: nth($colores,2);
+        font-size: 30px;
+        text-decoration: none;
+        text-align: center;
+    }    
+    .colaboradores{
+        @include flex-2 (flex,space-evenly,center);
+
+        a{
+            color: nth($colores,2);
+            text-decoration: none;
+
+        }
+        h3{
+            text-align: center;
+            margin-left: 10px;
+            font-size: 30px;            
+        }
+    }
+}
+

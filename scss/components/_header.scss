@@ -1,0 +1,15 @@
+header nav {
+    background-color: nth($colores,1);
+}
+
+.nav-link {
+    color:nth($colores,2);
+    font-size: 25px;
+    font-family: Verdana;
+    font-style: italic;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+}

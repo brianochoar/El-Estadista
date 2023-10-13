@@ -1,0 +1,25 @@
+$colores:#8a0f0f,white,black,#a30909,red;
+
+//!maps
+$horizontal:(
+    fondo:rgb(230, 227, 227),
+    borde: 2px solid rgb(0, 0, 0),
+    margen:35px,
+    ancho:100%,
+    alto:250px,
+);
+
+//!extends
+%flex-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//!mixins
+@mixin flex-2 ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
