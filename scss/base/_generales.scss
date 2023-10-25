@@ -6,3 +6,25 @@
     
 }
 
+.noticiavert{
+    div{
+        transition: 2s;        
+    }
+}
+
+.noticiavert{
+    div:hover{
+        transform: scale(1.2);
+    }
+}
+
+@keyframes idolos{
+    from{
+        margin-right: 100%;
+        width: 300%;
+    }
+    to{margin-right: 0;
+        width: 100%;
+
+    }
+}

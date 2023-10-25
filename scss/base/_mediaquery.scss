@@ -1,4 +1,6 @@
 @media screen and (max-width:1200px) {
+
+   
     .paginas h2 {
         color: rgb(0, 0, 0);
         font-family: Verdana;
@@ -32,7 +34,7 @@
 
 @media screen and (max-width:1056px) {
     .hero {
-        margin: 10px;
+        margin: 5px;
         justify-content: space-around;
 
     }
@@ -60,61 +62,34 @@
 
 }
 
-@media screen and (max-width:950px) {
-    .publicidad a img {
-        display: none;
-    }
-
-    .herocentral2 a img {
-        width: 100%;
-
-    }
-
-    .hero {
-        margin: 10px;
-        width: 100%;
-
-    }
-}
-
-@media screen and (max-width:985px) {
+@media screen and (max-width:1000px) {
     .notivert {
-
-        width: 50%;
-        height: 900px;
-        display: inline-block;
-        align-items: center;
-
-
-
-
+        width: 99%;
+        height: 920px;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
     }
 
-    .noticiavert div {
-        border: 3px solid black;
-        margin-top: 20px;
-        width: 100%;
+
+    .noticiavert{
+        width: 600px;
         height: 300px;
-        background-color: rgb(230, 227, 227);
-        position: relative;
-        left: 200px;
-
-
-
-
+        
     }
 
     .noticiavert div img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
+        width: 500px;
+        height: 300px;
     }
 
     .noticiavert div h2 a {
-        font-size: 25px;
-    }
+        font-size: 35px;
+        color: black;
+    }   
 
 }
+
 
 @media screen and (max-width:950px) {
     .publicidad a img {
@@ -129,7 +104,10 @@
     .hero {
         margin: 10px;
         width: 100%;
+    }
 
+    .herocentral div a h2 {
+        width: 98%;
     }
 }
 
@@ -205,6 +183,34 @@
     }
 }
 
+@media screen and (max-width:850px) {
+    .biografia {
+        display: grid;
+        justify-content: center;
+        width: 100%;
+
+        .bio {
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+
+            grid-template-areas:
+                "lionel cristiano"
+                "mbappe maradona"
+                "zidane ronaldo";
+
+            .grid-items {
+                h2{
+                    display: none;
+                  a{
+                    background-color: red;
+                    display: none;
+                  }  
+                }
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width:800px) {
     .paginas h2 {
@@ -256,30 +262,18 @@
     }
 }
 
-@media screen and (max-width:760px) {
-
-
+@media screen and (max-width:761px) {
+    
     .herocentral div a img {
-        width: 90%;
-        position: relative;
-        left: 30px;
-
-
+        width: 100%;
+        padding: 0 30px;
+        
     }
 
-    .herocentral div a h2 {
-        width: 80%;
-        text-align: center;
-        color: white;
-        font-family: Verdana;
-        font-style: normal;
-        text-decoration: none;
-        font-size: 30px;
-        margin: 10px;
-        position: relative;
-        left: 50px;
-        text-decoration: none;
-        padding: 20px;
+    .herocentral2 a h2{
+        width: 90%;
+        font-size: 25px;
+        margin-bottom: 10px;
     }
 }
 
@@ -320,42 +314,37 @@
 
 @media screen and (max-width:661px) {
 
-    .hero {
-        margin: 0 auto;
-    }
 
+    .hero{
+        width: 98%;
+        
+    }
     .herocentral div a img {
-        width: 100%;
-        position: relative;
-        left: 30px;
+        width: auto 0;
+        
 
 
     }
 
     .herocentral div a h2 {
-        width: 80%;
-        text-align: center;
-        color: white;
-        font-family: Verdana;
-        font-style: normal;
-        text-decoration: none;
+        width: 95%;
         font-size: 25px;
         margin: 10px;
-        position: relative;
-        left: 50px;
+        padding: 10px;
         text-decoration: none;
-        padding: 20px;
+        
     }
+  
 }
 
 @media screen and (max-width:650px) {
     .contenedor {
-        width: 80%;
+        width: 99%;
         padding: 25px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 200px 200px 200px 200px;
+        grid-auto-rows: auto;
 
 
         grid-template-areas:
@@ -366,23 +355,14 @@
 
     }
 
-    .grid-items {
-
-        position: relative;
-        left: 50px;
-    }
 
     .grid-items img {
-        object-fit: contain;
+        object-fit: fill;
         width: 100%;
-        height: 100%;
-    }
-
-    .grid-items a img {
-        object-fit: cover;
         box-shadow: 14px 10px 39px -8px rgba(0, 0, 0, 0.75);
         -webkit-box-shadow: 14px 10px 39px -8px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 14px 10px 39px -8px rgba(0, 0, 0, 0.75);
+        
     }
 
     .grid-items h2 a {
@@ -429,36 +409,33 @@
     }
 }
 
-@media screen and (max-width:630px) {
-    .notivert {
 
-        width: 60%;
-        height: 300px;
+@media screen and (max-width:650px){
+    .notivert {
+        width: 99%;
+        height: 1000px;
+        
+        
     }
 
-    .noticiavert div {
-        border: 2px solid black;
-        margin-top: 20px;
-        width: 200px;
-        height: 200px;
-        background-color: rgb(230, 227, 227);
-        position: relative;
-        left: 150px;
 
-
-
-
-
+    .noticiavert{
+        width: 400px;
+        height: 300px;
+        margin: 1px;
+        
     }
 
     .noticiavert div img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
+        width: 400px;
+        height: 200px;
     }
+}
 
-    .noticiavert div h2 a {
-        font-size: 15px;
+
+@media screen and (max-width:630px) {
+    .carrusel{
+        display: none;
     }
 
 }
@@ -475,39 +452,72 @@
     .redes {
         display: none;
     }
+
+    .paginas iframe{
+        display: none;
+    }
+    .paginas p{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width:500px) {
 
     .herocentral div a img {
         width: 100%;
-        position: relative;
-        left: 30px;
-
 
 
     }
 
     .herocentral div a h2 {
-        width: 90%;
-        text-align: center;
-        color: white;
-        font-family: Verdana;
-        font-style: normal;
-        text-decoration: none;
         font-size: 15px;
         margin: 10px;
-        position: relative;
-        left: 50px;
         text-decoration: none;
         padding: 5px;
     }
 }
 
 @media screen and (max-width:500px) {
-    .noticiavert div {
-        position: relative;
-        left: 100px;
+    .biografia {
+        width: 95%;
+
+        .bio {
+            width: 100%;
+            grid-template-columns: 1fr;
+
+            grid-template-areas:
+                "lionel"
+                "cristiano"
+                "mbappe"
+                "maradona"
+                "zidane" 
+                "ronaldo";
+        }
+    }
+   
+}
+
+
+@media screen and (max-width:450px){
+    .notivert {
+        width: 99%;
+        height: 800px;
+        
+        
+    }
+
+
+    .noticiavert{
+        width: 300px;
+        height: 250px;
+        margin: 1px;
+        
+    }
+
+    .noticiavert div img {
+        width: 300px;
+        height: 150px;
     }
 }
 
@@ -516,32 +526,15 @@
         font-size: 20px;
     }
 
+    .herocentral div a img{
+        object-fit: cover;
+
+    }
+
 }
 
-@media screen and (max-width:850px) {
-    .biografia {
-        width: 100%;
-
-        h3 {}
-
-        .bio {
-            width: 100%;
-            grid-template-columns: 1fr 1fr;
-
-            grid-template-areas:
-                "lionel cristiano"
-                "mbappe maradona"
-                "zidane ronaldo";
-
-            .grid-items {
-                h2{
-                    display: none;
-                  a{
-                    background-color: red;
-                    display: none;
-                  }  
-                }
-            }
-        }
+@media screen and (max-width:350px) {
+    .herocentral div a img{
+        object-fit: cover;
     }
 }

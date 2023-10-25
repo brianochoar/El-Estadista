@@ -1,25 +1,38 @@
-footer{
-    background-color: nth($colores,1);
+footer {
+    background-color: nth($colores, 1);
     bottom: 0;
-    .colaboradores1{
-        color: nth($colores,2);
+
+    .colaboradores1 {
+        color: nth($colores, 2);
         font-size: 30px;
         text-decoration: none;
         text-align: center;
-    }    
-    .colaboradores{
-        @include flex-2 (flex,space-evenly,center);
+    }
 
-        a{
-            color: nth($colores,2);
+    .colaboradores {
+        @include flex-2 (flex, space-evenly, center);
+
+        a {
+            color: nth($colores, 2);
             text-decoration: none;
 
         }
-        h3{
+
+        h3 {
             text-align: center;
             margin-left: 10px;
-            font-size: 30px;            
+            font-size: 30px;
+        }
+    }
+
+    .redes{
+        margin: 10px;
+        display: flex;
+        justify-content: space-around;
+
+        a:hover{
+            transition: 1s;
+            transform: scale(1.4);
         }
     }
 }
-
