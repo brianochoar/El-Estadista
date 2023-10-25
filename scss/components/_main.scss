@@ -4,15 +4,14 @@
     @extend %flex-1;
     margin-bottom: 60px;
    
-    .herocentral{
+    section{
         div{
-            a{
-                img{
+            img{
                 width: 100%;
                 height: 500px;
                 position: relative;
-                }
-                h2{
+            }
+            h2{
                 width: 100%;
                 text-align: center;
                 color: nth($colores,2);
@@ -22,20 +21,19 @@
                 font-size: 40px;
                 margin: 10px;
                 position: absolute;
-                }
             }
-        }
-        .herocentral2{
-            position: relative;
-            bottom: auto;
-                    h2{
-                    background-color: nth($colores,1);
-                    color: nth($colores,2);
-                    }
         }
     }
 }
 
+.herocentral2{
+    position: relative;
+    bottom: auto;
+            h2{
+            background-color: nth($colores,1);
+            color: nth($colores,2);
+            }
+            }
 /*------------- NOTICIAS VERTICALES-----------*/
 .notivert{
     width: 98%;
@@ -160,7 +158,6 @@
         text-align: center;
         margin: 10px;
         padding: 10px;
-        
     }
     img{
         width: 100%;
@@ -184,6 +181,7 @@
     iframe{
         margin-top: 10px;
     }
+
    
 }
 
@@ -219,9 +217,9 @@
         background-color: rgba(169, 169, 169, 0.295);
         color: black;
         animation-name: idolos;
-        animation-duration: 3s;
+        animation-duration: 5s;
         animation-timing-function: ease;
-        
+       
     }
     .bio{
         display: grid;
