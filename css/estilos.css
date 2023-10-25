@@ -321,7 +321,9 @@ footer {
     text-decoration: none;
     font-size: 30px;
     margin: 10px;
-    position: absolute; } }
+    position: absolute; }
+  .publicidad a img {
+    display: none; } }
 
 @media screen and (max-width: 1000px) {
   .notivert {
@@ -341,8 +343,6 @@ footer {
     color: black; } }
 
 @media screen and (max-width: 950px) {
-  .publicidad a img {
-    display: none; }
   .herocentral2 a img {
     width: 100%; }
   .hero {

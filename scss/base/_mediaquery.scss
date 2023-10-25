@@ -59,7 +59,9 @@
         position: absolute;
 
     }
-
+    .publicidad a img {
+        display: none;
+    }
 }
 
 @media screen and (max-width:1000px) {
@@ -92,10 +94,7 @@
 
 
 @media screen and (max-width:950px) {
-    .publicidad a img {
-        display: none;
-    }
-
+    
     .herocentral2 a img {
         width: 100%;
 
